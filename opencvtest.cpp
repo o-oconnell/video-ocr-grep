@@ -90,7 +90,7 @@ int main(int argc, char** argv){
 	    std::size_t found = outStr.find(search);
 	    
 	    if (found != std::string::npos) {
-		std::cout << "match: " <<'\n';
+		std::cout << "\nmatch:\n";
 		std::cout << "[" << timestamp_ << "] ||" << outStr.substr(found, search.length()) << "||" << outStr.substr(found + search.length(), 100);
 	    }
 	    
