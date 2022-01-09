@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( OpenCVTest )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( tst opencvtest.cpp )
+target_link_libraries( tst ${OpenCV_LIBS} leptonica tesseract )
